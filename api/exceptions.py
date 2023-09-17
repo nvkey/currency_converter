@@ -1,0 +1,2 @@
+class ErApiResponseEception(Exception):
+    pass
