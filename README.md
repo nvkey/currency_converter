@@ -3,7 +3,7 @@
 ## Задание:
 Написать сервис "Конвертер валют" который работает по REST-API.
 Пример запроса:  
-```GET /api/rates?from=USD&to=RUB&value=1```
+```GET /api/rates?from=USD&to=RUB&value=1```  
 Ответ:  
 ```json
 {
@@ -26,6 +26,16 @@ https://www.exchangerate-api.com/
 ``` bash
 git clone git@github.com:nvkey/currency_converter.git
 cd currency_converter
+```
+
+Создайте файл .env в папке `/infra/` со следующими ключами:
+```bash
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432
 ```
 
 Запустить docker-compose:
