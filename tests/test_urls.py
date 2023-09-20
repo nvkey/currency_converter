@@ -11,7 +11,9 @@ class TestUrls:
         "url, expectation",
         [
             ("/api/v1/currency/", status.HTTP_200_OK),
+            ("/api/v1/pair/AED/USD/2", status.HTTP_200_OK),
             ("/api/v1/open_erapi/USD/", status.HTTP_200_OK),
+            ("/api/v1/open_erapi/pair/USD/USD/1", status.HTTP_200_OK),
             ("/admin/", status.HTTP_302_FOUND),
         ],
     )
